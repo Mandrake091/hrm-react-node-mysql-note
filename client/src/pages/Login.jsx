@@ -42,49 +42,56 @@ function Login() {
   return (
     <>
       <Nav />
+      <div className="font">
+        <div className="inside">Hello</div>
+      </div>
+
       <div className={`alert mt-5 alert-${type}`} style={alert} role="alert">
         {message}
       </div>
       <div className="container mt-5">
-        <h2>Login</h2>
-
-        <div className="card">
-          <div className="card-body">
-            <form>
-              <div className="mb-3">
-                <label htmlFor="user" className="form-label">
-                  Email address
-                </label>
-                <input
-                  onChange={(e) => setUser(e.currentTarget.value)}
-                  type="email"
-                  className="form-control"
-                  id="user"
-                  aria-describedby="emailHelp"
-                />
-                <div id="emailHelp" className="form-text">
-                  We'll never share your email with anyone else.
-                </div>
+        <div className="row justify-content-center">
+          <div className="col-12 col-md-6">
+            <h2>Login</h2>
+            <div className="card">
+              <div className="card-body">
+                <form>
+                  <div className="mb-3">
+                    <label htmlFor="user" className="form-label">
+                      Email address
+                    </label>
+                    <input
+                      onChange={(e) => setUser(e.currentTarget.value)}
+                      type="email"
+                      className="form-control"
+                      id="user"
+                      aria-describedby="emailHelp"
+                    />
+                    <div id="emailHelp" className="form-text">
+                      We'll never share your email with anyone else.
+                    </div>
+                  </div>
+                  <div className="mb-3">
+                    <label htmlFor="pass" className="form-label">
+                      Password
+                    </label>
+                    <input
+                      onChange={(e) => setPass(e.currentTarget.value)}
+                      type="password"
+                      className="form-control"
+                      id="pass"
+                    />
+                  </div>
+                  <button
+                    onClick={(e) => submit(e)}
+                    type="submit"
+                    className="btn btn-primary"
+                  >
+                    Submit
+                  </button>
+                </form>
               </div>
-              <div className="mb-3">
-                <label htmlFor="pass" className="form-label">
-                  Password
-                </label>
-                <input
-                  onChange={(e) => setPass(e.currentTarget.value)}
-                  type="password"
-                  className="form-control"
-                  id="pass"
-                />
-              </div>
-              <button
-                onClick={(e) => submit(e)}
-                type="submit"
-                className="btn btn-primary"
-              >
-                Submit
-              </button>
-            </form>
+            </div>
           </div>
         </div>
       </div>

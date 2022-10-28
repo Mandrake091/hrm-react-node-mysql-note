@@ -35,7 +35,11 @@ function Note() {
         <p>Empty</p>
       ) : (
         data.map((el) => (
-          <div className="card" key={el.note_id} style={{ width: "18rem" }}>
+          <div
+            className="card create-title"
+            key={el.note_id}
+            style={{ width: "18rem" }}
+          >
             <div className="card-body">
               <h5 className="card-title">{el.title}</h5>
               <h6

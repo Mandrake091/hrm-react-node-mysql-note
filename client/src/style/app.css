@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(21, 0, 51, 0.726);
+  background-color: rgba(0, 21, 156, 0.732);
 }
 .navbar {
   background: rgba(255, 255, 255, 0.32) !important;
@@ -10,7 +10,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .card {
-  background: rgba(255, 255, 255, 0.32);
+  background: rgba(255, 255, 255, 0.184);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -56,9 +56,13 @@ span:hover {
   display: flex;
   justify-content: center;
   font-size: 50vw;
-  height: calc(100vh - 300px);
+  height: calc(100vh - 100px);
   overflow: hidden;
   width: calc(100vw );
   font-weight: 900;
-  color: #f6ff4331;
+  color: #1c2765;
+}
+.create-title{
+  color:#1c2765;
+  font-weight: 700;
 }

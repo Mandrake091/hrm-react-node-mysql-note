@@ -38,8 +38,8 @@ function CreateNote() {
   return (
     <div className="container mt-3">
       <div className="card">
-        <div className="card-body">
-          <h4>Create new note</h4>
+        <div className="create-title card-body">
+          <h4 className="">Create new note</h4>
           <form>
             <div className="mb-3">
               <label htmlFor="title" className="form-label">
