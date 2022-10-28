@@ -1,0 +1,65 @@
+body {
+  overflow: hidden; /* Hide scrollbars */
+  background-color: rgba(21, 0, 51, 0.726);
+}
+.navbar {
+  background: rgba(255, 255, 255, 0.32) !important;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.card {
+  background: rgba(255, 255, 255, 0.32);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.form-control {
+  background: rgba(49, 49, 49, 0.069);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.btn {
+  background: rgba(255, 255, 255, 0.32);
+  border-radius: 16px !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  color: black;
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.alert {
+  width: 50%;
+  margin: 0 auto;
+  transition: opacity 1.5s;
+}
+
+span:hover {
+  cursor: pointer;
+}
+
+.inside {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.font {
+  text-align: center;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  font-size: 50vw;
+  height: calc(100vh - 300px);
+  overflow: hidden;
+  width: calc(100vw );
+  font-weight: 900;
+  color: #f6ff4331;
+}
