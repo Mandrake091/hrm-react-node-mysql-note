@@ -3,11 +3,15 @@ import { useContext } from "react";
 import { useState } from "react";
 import { userContext } from "../pages/Home";
 function CreateNote() {
+  
   const { setType, setMessage, setAlert, setNoteUpdate } =
     useContext(userContext);
 
+  //state management for title, and note description
   const [title, setTitle] = useState("");
   const [note, setNote] = useState("");
+
+  //function for displaying alert and redirection to other page
   const sendMessage = (text, type = "danger", time = 2) => {
     setType(type);
     setMessage(text);
@@ -19,6 +23,8 @@ function CreateNote() {
       }
     }, time * 1000);
   };
+
+  //submit form
   const submit = (e) => {
     e.preventDefault();
     if (title.length < 3 || note.length < 3)
@@ -30,15 +36,17 @@ function CreateNote() {
     })
       .then((res) => res.json())
       .then((data) => {
-        if (data.status) {sendMessage(data.message, "success"); setNoteUpdate(prev => prev +1)} 
-        else sendMessage(data.message);
+        if (data.status) {
+          sendMessage(data.message, "success");
+          setNoteUpdate((prev) => prev + 1);
+        } else sendMessage(data.message);
       });
   };
 
   return (
     <div className="container mt-3">
       <div className="card">
-        <div className="create-title card-body">
+        <div className="create-note card-body">
           <h4 className="">Create new note</h4>
           <form>
             <div className="mb-3">

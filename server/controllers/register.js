@@ -1,5 +1,10 @@
 const bcrypt = require("bcryptjs");
 const db = require("../routes/db-config");
+
+//i use this https://www.npmjs.com/package/bcryptjs
+//crypt and decrypt the password
+//you can declare how many cycle for obtain a secure password
+
 const register = async (req, res) => {
   const { user, pass: rawPsw } = req.body;
   db.query(

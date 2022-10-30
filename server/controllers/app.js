@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
+//get routes in external files
 const deleteNote = require("./deleteNote");
 const updateNote = require("./updateNote");
 const createNote = require("./createNote");
@@ -12,7 +13,7 @@ const getNotes = require("./getNotes");
 
 
 
-
+//routes for rest
 router.post("/register", register);
 router.post("/login", login);
 router.post("/createNote", createNote);

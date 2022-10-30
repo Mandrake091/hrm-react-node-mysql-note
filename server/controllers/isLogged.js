@@ -1,5 +1,8 @@
 const db = require("../routes/db-config");
 const jwt = require('jsonwebtoken');
+//i use this https://www.npmjs.com/package/jsonwebtoken
+//is cryptography library for token authentication
+//in file .env you find the rules for JWT_SECRET to randomize tokens
 
 const isLogged = (req, res) => {
   if (!req.cookies.logUser) return res.json({ status: 0});

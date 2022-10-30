@@ -3,11 +3,17 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 function Nav() {
+
+  //state management for navbar 
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
+  //state management for login 
   const [logged, status] = useState(false);
   const [user, setUser] = useState("");
+
+  //state management for control if the user is logged in
+  //this is called every time the page is loaded
   useEffect(() => {
     fetch("/api/isLogged")
       .then((res) => res.json())
@@ -23,7 +29,7 @@ function Nav() {
     <nav className="navbar navbar-expand-md mt-2 mx-2">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand">
-          Hrm Group
+         Notes
         </Link>
 
         <button

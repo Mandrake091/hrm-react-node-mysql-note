@@ -1,4 +1,6 @@
+
 body {
+  overflow: hidden;
   background-color: rgba(0, 21, 156, 0.732);
 }
 .navbar {
@@ -10,7 +12,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .card {
-  background: rgba(255, 255, 255, 0.184);
+  background: rgba(255, 255, 255, 0.131);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -58,11 +60,31 @@ span:hover {
   font-size: 50vw;
   height: calc(100vh - 100px);
   overflow: hidden;
-  width: calc(100vw );
+  width: 100%;
   font-weight: 900;
   color: #1c2765;
 }
-.create-title{
-  color:#1c2765;
+.create-note {
+  color: #1c2765;
+  font-weight: 600;
+}
+.note {
+  font-size: 1.2em;
+  color: #1c2765;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.089);
+}
+h4{
   font-weight: 700;
+}
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.274) !important;
+  color: #1c2765 !important;
+}
+.card-subtitle{
+  color: rgba(240, 248, 255, 0.437) !important;
+}
+.card-title{
+  font-size: 1.2em;
+  font-weight: 800;
 }

@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import Nav from "../components/Nav";
 function Register() {
+  //state management for take pass, user and set type of message and alert message
+
   const [user, setUser] = useState("");
   const [pass, setPass] = useState("");
   const [type, setType] = useState("danger");
   const [message, setMessage] = useState("");
   const [alert, setAlert] = useState({ opacity: "0" });
+
+  //function for displaying alert and redirection to other page
 
   const sendMessage = (text, type = "danger", time = 2) => {
     setType(type);

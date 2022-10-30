@@ -4,6 +4,7 @@ import CreateNote from "../components/CreateNote";
 import ShowNotes from "../components/ShowNotes";
 import { createContext } from "react";
 
+//i've create a contex for manage notes
 export const userContext = createContext();
 
 function Home() {
@@ -13,10 +14,15 @@ function Home() {
   const [noteUpdate, setNoteUpdate] = useState(0);
   return (
     <>
+    {/* navbar */}
       <Nav />
+      
+      {/* alert */}
       <div className={`alert mt-3 alert-${type}`} style={alert} role="alert">
         {message}
       </div>
+
+      {/* background */}
       <div className="font">
         <div className="inside">Notes</div>
       </div>

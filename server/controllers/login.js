@@ -1,6 +1,15 @@
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 const db = require("../routes/db-config");
+//i use this https://www.npmjs.com/package/jsonwebtoken
+//is cryptography library for token authentication
+//in file .env you find the rules for JWT_SECRET to randomize tokens
+
+//i use this https://www.npmjs.com/package/bcryptjs
+//crypt and decrypt the password
+
+//JWT-EXPIRATION you can find in .end file when the tokes must be expired
+
 
 const login = async (req, res) => {
   const { user, pass } = req.body;
