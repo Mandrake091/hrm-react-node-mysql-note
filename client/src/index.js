@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Register from "./pages/Register";
 import NoPage from "./pages/NoPage";
 import Login from "./pages/Login";
-import "./style/app.css";
+import "./style/app.scss";
 
 //i use react-router-dom for manage the navigation between pages
 const App = () => {
